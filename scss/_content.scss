@@ -1,0 +1,44 @@
+.content-cont {
+    width: 100%;
+    background: $main_color_sec;
+    display: flex;
+    box-sizing: border-box;
+    padding: 10px;
+    flex: 1;
+
+    .card {
+        flex: 1;
+        margin: 10px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        background: $secondary_color_sec;
+        border: 1px solid $secondary_color_border;
+        border-radius: 5px;
+
+        .title {
+            width: 100%;
+            height: fit-content;
+            font-size: 24px;
+            box-sizing: border-box;
+            padding: 10px;
+            padding-bottom: 0px;
+            color: $contrast_color_prim;
+            font-family: 'Roboto Slab';
+        }
+
+        .content {
+            width: 100%;
+            flex: 1;
+            box-sizing: border-box;
+            padding: 10px;
+            color: $contrast_color_prim;
+            font-family: 'Roboto Slab';
+        }
+
+        hr {
+            width: 95%;
+            border: 1px solid $secondary_color_border;
+        }
+    }
+}
