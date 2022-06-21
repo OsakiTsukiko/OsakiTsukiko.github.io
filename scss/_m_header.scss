@@ -1,15 +1,18 @@
 .header {
     width: 100%;
-    padding: 30px;
+    height: 100%;
+    min-height: 500px;
     box-sizing: border-box;
+    background: $main_color_prim;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: $main_color_prim;
+    flex-direction: column;
 
     .img {
-        width: 250px;
-        height: 250px;
+        width: 80%;
+        max-width: 250px;
+        max-height: 250px;
         box-sizing: border-box;
         margin-right: 15px;
 
@@ -42,27 +45,25 @@
 
     .title-cont {
         width: fit-content;
-        height: 250px;
-        background: $secondary_color_sec;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        height: fit-content;
         box-sizing: border-box;
         padding: 30px;
-        padding-left: 50px;
-        padding-right: 50px;
-        margin-left: 15px;
+        background: $secondary_color_sec;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
         font-family: 'Roboto Mono';
         clip-path: polygon(
-            2% 4%,
-            97% 0,
+            2% 6%,
+            92% 0%,
             100% 100%,
             0 96%
         );
 
         .title {
-            font-size: 100px;
+            font-size: 35px;
             color: $contrast_color_prim;
         }
 
