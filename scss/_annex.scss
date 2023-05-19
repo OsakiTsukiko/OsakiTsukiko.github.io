@@ -1,0 +1,139 @@
+.annex-cont {
+    @media screen and (min-width: 1001px) { // Desktop
+        height: 100%;
+        width: fit-content;
+        flex: 1;
+        // padding: 20px;
+    }
+
+    @media screen and (max-width: 1000px) { // Mobile
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    display: flex;
+    flex-direction: column;
+    // background: red;
+    box-sizing: border-box;
+
+    .user-cont {
+        width: 100%;
+        height: 75px;
+        box-sizing: border-box;
+        display: flex;
+        
+        img {
+            height: 100%;
+            border-radius: 5px;
+            box-sizing: border-box;
+            border: 3px solid $background-main;
+            box-shadow: 0px 0px 0px 2px rgba($color: $accent-main, $alpha: .5);
+        }
+
+        .username {
+            box-sizing: border-box;
+            padding-left: 10px;
+            padding-right: 10px;
+            display: flex;
+            flex-direction: column;
+            flex: auto;
+            // background: red;
+
+            // y {
+                // background: blue;
+            // }
+            justify-content: center;
+
+            .name {
+                font-family: 'Roboto Mono';
+                color: rgba($color: $accent-main, $alpha: 1);
+                font-weight: 900;
+            }
+
+            .status {
+                font-family: 'Roboto Mono';
+                color: rgba($color: $accent-main, $alpha: 1);
+                font-weight: 300;
+                opacity: .7;
+            }
+
+            .qmqmqm { // rats! rats! we are the rats!
+                font-family: 'Roboto Mono';
+                color: rgba($color: $accent-main, $alpha: 1);
+                font-weight: 300;
+                opacity: .4;
+            }
+        }
+    }
+
+    .annex {
+        color: rgba($color: $accent-main, $alpha: .7);
+        box-sizing: border-box;
+        padding-top: 20px;
+        padding-bottom: 15px;
+
+        h2 {
+            margin: 0px;
+            font-family: 'Roboto Mono';
+            transition: .15s;
+            // color: inherit;
+    
+            &::before {
+                content: "- ";
+            }
+
+            &:hover {
+                color: rgba($color: $accent-main, $alpha: 1);
+            }
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+    }
+
+    .desktop-fill-and-links {
+        @media screen and (max-width: 1000px) { // Mobile
+            display: none;
+        }
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        // background: blue;
+        flex: auto;
+        box-sizing: border-box;
+        padding-right: 50px;
+
+        a {
+            text-decoration: none;
+        }
+
+        .link-cont {
+            width: 100%;
+            height: 30px;
+            // background: red;
+            display: flex;
+            align-items: center;
+
+            i {
+                font-size: 30px;
+                color: rgba($color: $accent-main, $alpha: .15);
+                cursor: pointer;
+                margin-right: 10px;
+                transition: .15s;
+
+                &:hover {
+                    color: rgba($color: $accent-main, $alpha: .3);
+                }
+            }
+
+            y {
+                font-family: 'Roboto Mono';
+                font-size: 20px;
+                color: rgba($color: $accent-main, $alpha: .15);
+            }
+        }
+    }
+}
