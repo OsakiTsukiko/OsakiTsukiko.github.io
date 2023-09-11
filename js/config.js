@@ -53,11 +53,14 @@ var page_content = {
                 <h1 id="projects">My Projects</h1><br>
                 &emsp;Game Jam projects:<br>
                 <ul>
-                    <li><a href="https://osakitsukiko.itch.io/mandrake" target="_blank">
-                        Mandrake
+                    <li><a href="https://serb2331.itch.io/capitalist-alchemist" target="_blank">
+                        Capitalist Alchemist
                     </a></li>
                     <li><a href="https://osakitsukiko.itch.io/esper" target="_blank">
                         Esper
+                    </a></li>
+                    <li><a href="https://osakitsukiko.itch.io/mandrake" target="_blank">
+                        Mandrake
                     </a></li>
                 </ul>
                 &emsp;Inactive projects:<br>
